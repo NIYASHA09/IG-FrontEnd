@@ -17,7 +17,7 @@ const Form = ({ isSignInPage = false }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${SERVER}/api/login`, {
+      const response = await axios.post(`${process.env.SERVER}/api/login`, {
         username,
         password,
       });
@@ -36,7 +36,7 @@ const Form = ({ isSignInPage = false }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${SERVER}/api/register`, {
+      const response = await axios.post(`${process.env.SERVER}/api/register`, {
         username,
         email,
         password,
