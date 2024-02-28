@@ -36,7 +36,7 @@ const Form = ({ isSignInPage = false }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8000/api/register', {
+      const response = await axios.post(`${SERVER}/api/register`, {
         username,
         email,
         password,
