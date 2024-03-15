@@ -17,7 +17,7 @@ const Form = ({ isSignInPage = false }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`https://ig-server.vercel.app/app.js/api/login`, {
+      const response = await axios.post(`https://ig-server.vercel.app/api/login`, {
         username,
         password,
       });
@@ -36,7 +36,7 @@ const Form = ({ isSignInPage = false }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`https://ig-server.vercel.app/app.js/api/register`, {
+      const response = await axios.post(`https://ig-server.vercel.app/api/register`, {
         username,
         email,
         password,
