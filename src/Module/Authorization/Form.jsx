@@ -15,7 +15,7 @@ const Form = ({ isSignInPage = false }) => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
+//Uses a try block to handle potential errors. Sends a POST request to the login API with the username and password as the request body, awaiting the response.
     try {
       const response = await axios.post(`https://ig-server-nine.vercel.app/api/login`, {
         username,
